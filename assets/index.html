@@ -1,344 +1,779 @@
 <!DOCTYPE html>
-<html>
-<title>BlogWorld</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
-</style>
-<body class="w3-light-grey">
+<html lang="en">
 
-<!-- Navigation bar with social media icons -->
-<div class="w3-bar w3-black w3-hide-small">
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
-</div>
-  
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1600px">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!-- Header -->
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>SHUBHAM TECHFREAK</b></h1>
-    <h6>Welcome to the blog of <span class="w3-tag">Shubham's world</span></h6>
-  </header>
+  <title>DevFolio Bootstrap Portfolio Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
-  <!-- Image header -->
-  <header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="/assests/gifs/wip.gif" alt="Fashion Blog" width="1600" height="1060">
-    <div class="w3-display-left w3-padding-large">
-      <h1 class="w3-text-white">Shubham's</h1>
-      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>BLOGS</b></h1>
-      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
-    </div>
-  </header>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Grid -->
-  <div class="w3-row w3-padding w3-border">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
 
-    <!-- Blog entries -->
-    <div class="w3-col l8 s12">
-    
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>TITLE HEADING</h3>
-          <h5>Title description, <span class="w3-opacity">May 2, 2016</span></h5>
-        </div>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-        <div class="w3-justify">
-          <img src="/w3images/girl_hat.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
-          <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
-            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
-          <p class="w3-clear"></p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-            <hr>
-              <div class="w3-col l2 m3">
-                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
-                <p>Great blog post! Following</p>
-              </div>
-          </div>
-        </div>
-      </div>
-      <hr>
+  <!-- =======================================================
+  * Template Name: DevFolio - v2.0.0
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>TITLE HEADING</h3>
-          <h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>
-        </div>
+<body id="page-top">
 
-        <div class="w3-justify">
-          <img src="/w3images/man_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
-          <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
-          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
-          <p class="w3-clear"></p>
-          
-          <!-- Example of comment field -->
-          <div id="demo2" style="display:none">
-            <div class="w3-row">
-              <hr>
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl_train.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
-                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-              </div>
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
-                <p>Love hats!!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>TITLE HEADING</h3>
-          <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
-          <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
-          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
-          <p class="w3-clear"></p>
-          
-          <!-- Example of comment field -->
-          <div id="demo3" style="display:none">
-            <hr>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl_mountain.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
-                <p>That was a great runway show! Thanks for everything.</p>
-              </div>
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/boy.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
-                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-              </div>
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl_hood.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
-                <p>Cant wait for the runway to start!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    <!-- END BLOG ENTRIES -->
-    </div>
-
-    <!-- About/Information menu -->
-    <div class="w3-col l4">
-      <!-- About Card -->
-      <div class="w3-white w3-margin">
-        <img src="/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
-        <div class="w3-container w3-black">
-          <h4>My Name</h4>
-          <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Posts -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Popular Posts</h4>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-padding-16">
-            <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Denim</span>
-            <br>
-            <span>Sed mattis nunc</span>
+  <!-- ======= Header/ Navbar ======= -->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">DevFolio</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="index.html">Home</a>
           </li>
-          <li class="w3-padding-16">
-            <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Sweaters</span>
-            <br>
-            <span>Praes tinci sed</span>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
           </li>
-          <li class="w3-padding-16">
-            <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Workshop</span>
-            <br>
-            <span>Ultricies congue</span>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Services</a>
           </li>
-          <li class="w3-padding-16">
-            <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
-            <span class="w3-large">Trends</span>
-            <br>
-            <span>Lorem ipsum dipsum</span>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
-      <hr>
+    </div>
+  </nav>
 
-      <!-- Advertising -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Advertise</h4>
+  <!-- ======= Intro Section ======= -->
+  <div id="home" class="intro route bg-image" style="background-image: url(assets/img/intro-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">I am Morgan Freeman</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
-        <div class="w3-container w3-white">
-          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
-            <span class="w3-display-middle">Your AD Here</span>
+      </div>
+    </div>
+  </div><!-- End Intro Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Morgan Freeman</span></p>
+                        <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                      imperdiet et, porttitor
+                      at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
+                      porttitor accumsan tincidunt.
+                    </p>
+                    <p class="lead">
+                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                      porttitor volutpat. Vestibulum
+                      ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                    </p>
+                    <p class="lead">
+                      Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                      Nulla porttitor accumsan
+                      tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <hr>
+    </section><!-- End About Section -->
 
-      <!-- Tags -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Tags</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <p>
-            <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
-          </p>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Inspiration -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Inspiration</h4>
-        </div>
-        <div class="w3-row-padding w3-white">
-          <div class="w3-col s6">
-            <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>
-            <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="services-mf route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Services
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
           </div>
-          <div class="w3-col s6">
-            <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
-            <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
-         </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-monitor"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Design</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-code-working"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-camera"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Photography</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Responsive Design</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Graphic Design</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Marketing Services</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                  provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <hr>
+    </section><!-- End Services Section -->
 
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Follow Me</h4>
-        </div>
-        <div class="w3-container w3-xlarge w3-padding">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-snapchat w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-          <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter">450</p>
+                <span class="counter-text">WORKS COMPLETED</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter">15</p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="ion-ios-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter">550</p>
+                <span class="counter-text">TOTAL CLIENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter">36</p>
+                <span class="counter-text">AWARD WON</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <hr>
-      
-      <!-- Subscribe -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Subscribe</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
-        </div>
-      </div>
+    </div><!-- End Counter Section -->
 
-    <!-- END About/Intro Menu -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-1.jpg" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Lorem impsum dolor</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <span class="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-2.jpg" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Loreda Cuno Nere</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <span class="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-3.jpg" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Mavrito Lana Dere</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <span class="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-4.jpg" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Bindo Laro Cado</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <span class="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-5.jpg" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Studio Lena Mado</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <span class="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-6.jpg" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Studio Big Bang</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <span class="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="testimonial-mf" class="owl-carousel owl-theme">
+              <div class="testimonial-box">
+                <div class="author-test">
+                  <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
+                  <span class="author">Xavi Alonso</span>
+                </div>
+                <div class="content-test">
+                  <p class="description lead">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                  </p>
+                  <span class="comit"><i class="fa fa-quote-right"></i></span>
+                </div>
+              </div>
+              <div class="testimonial-box">
+                <div class="author-test">
+                  <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
+                  <span class="author">Marta Socrate</span>
+                </div>
+                <div class="content-test">
+                  <p class="description lead">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                  </p>
+                  <span class="comit"><i class="fa fa-quote-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testimonials Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Blog
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Travel</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="ion-ios-clock-outline"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="ion-ios-clock-outline"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="ion-ios-clock-outline"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center mb-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                        expedita aperiam aliquid at.
+                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                        mollitia inventore?
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                        <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
+                        <li><span class="ion-email"></span> contact@example.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </footer><!-- End  Footer -->
 
-  <!-- END GRID -->
-  </div>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
 
-<!-- END w3-content -->
-</div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
 
-<!-- Subscribe Modal -->
-<div id="subscribe" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-      <h2 class="w3-wide">SUBSCRIBE</h2>
-      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey" style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-<script>
-// Toggle between hiding and showing blog replies/comments
-document.getElementById("myBtn").click();
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-function likeFunction(x) {
-  x.style.fontWeight = "bold";
-  x.innerHTML = "✓ Liked";
-}
-</script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
